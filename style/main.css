@@ -4,9 +4,6 @@ html, body{
     height: 100%;
 }
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -71,4 +68,25 @@ section{
 }
 #form-button:hover, #trash:hover{
     cursor: pointer;
+}
+@media(max-width: 768px){
+    .main-title{
+        text-align: center;
+    }
+    section{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .form{
+        width: 90%;
+        border-radius: 10px;
+        margin: auto;
+        text-align: center;
+    }
+    .form label{
+        margin: auto;
+    }
+    #form-color, .form button{
+        margin: 10px auto;
+    }
 }
