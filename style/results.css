@@ -40,3 +40,25 @@
     width: 2%;
     color: rgb(9, 138, 5);
 }
+@media(max-width: 768px){
+    .tasks-container{
+        margin-top: 20px;
+        width: 90%;
+        margin: auto;
+    }
+    .task{
+        justify-content: space-between;
+    }
+    #emoje-one{
+        width: 10%;
+    }
+    .task-info{
+        width: 50%;
+    }
+    .task-data{
+        width: 30%;
+    }
+    .trash{
+        width: 10%;
+    }
+}
