@@ -1,0 +1,42 @@
+.tasks-container{
+    width: 80%;
+}
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-left: 5px solid rgb(9, 138, 5);
+    padding-left: 10px;
+    height: 60px;
+    margin-bottom: 10px;
+    width: 90%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.task:hover{
+    background-color: rgb(152, 238, 149);
+}
+#emoje-one{
+    width: 3%;
+    text-align: left;
+}
+.task-info{
+    width: 70%;
+}
+.task-info h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.task-info span{
+    font-style: italic;
+}
+.task-data{
+    width: 10%;
+    text-align: center;
+}
+.trash{
+    background: none;
+    border: none;
+    width: 2%;
+    color: rgb(9, 138, 5);
+}

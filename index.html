@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=kalam">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/results.css">
+</head>
+<body onload="taskListController.addToDom()">
+    <header>
+        <h1 class="main-title">Welcome to my To Do List</h1>
+    </header>
+
+    <section>
+
+        <form class="form" onsubmit="buttonController.buttonClick(event)">
+            <h2>Add New Task!</h2>
+
+            <div class="container-for-error-message">
+                <label for="form-title" class="form-child">Title:</label>
+                <input type="text" name="form-title" id="form-title" class="form-child">
+            </div>
+            
+            <div class="container-for-error-message">
+                <label for="form-description" class="form-child">Description:</label>
+                <input type="text" name="form-description" id="form-description" class="form-child">
+            </div>
+            
+            <div class="container-for-error-message"> 
+                <label for="form-deadline" class="form-child">Deadline:</label>
+                <input type="date" name="form-deadline" id="form-deadline" class="form-child">
+            </div>
+            
+            <div class="container-for-error-message">
+                <label for="form-select" class="form-child">Type:</label>
+                <select name="form-select" id="form-select" class="form-child">
+                    <option value selected disabled>Type of the task</option>
+                    <option value="work">Work</option>
+                    <option value="Studies">Studies</option>
+                    <option value="Personal">Personal</option>
+                </select>
+            </div>
+            
+
+            <label for="form-color" class="form-child">Color:</label>
+            <input type="color" name="form-color" id="form-color" class="form-child">
+
+            <button id="form-button" class="form-child">Add</button>
+        </form>
+
+        <div class="tasks-container"></div>
+    </section>
+
+    <script src="script/View/TaskView.js"></script>
+    <script src="script/View/ErrorMessageView.js"></script>
+    <script src="script/Models/Task.js"></script>
+    <script src="script/controllers/RemoveTask.js"></script>
+    <script src="script/controllers/SaveTask.js"></script>
+    <script src="script/Models/TaskList.js"></script>
+    <script src="script/controllers/TaskController.js"></script>
+    <!--
+        <script src="script/services/ConnectionFactory.js"></script>
+        <script src="script/dao/TaskDao.js"></script>
+    -->
+    
+</body>
+</html>
